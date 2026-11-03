@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mates del Sur</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5efe5;
+            color: #302820;
+        }
+
+        header {
+            background-color: #294936;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .inicio {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #d9c9ad;
+        }
+
+        .inicio h2 {
+            color: #294936;
+            font-size: 42px;
+        }
+
+        .seccion {
+            padding: 60px 20px;
+        }
+
+        .productos {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .producto {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .producto h3 {
+            color: #294936;
+        }
+
+        .contacto {
+            background-color: #ded1bb;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #b9aa94;
+            border-radius: 6px;
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #386c4c;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1f3829;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .productos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🧉 Mates del Sur</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <a href="/consultas">Ver consultas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio" id="inicio">
+            <h2>El mate que acompaña tus mejores momentos</h2>
+
+            <p>
+                Descubrí nuestra colección de mates artesanales,
+                bombillas y accesorios, seleccionados para combinar
+                tradición, calidad y diseño.
+            </p>
+        </section>
+
+        <section class="seccion" id="productos">
+
+            <div class="productos">
+
+                <article class="producto">
+                    <h3>Mate Imperial</h3>
+
+                    <p>
+                        Mate artesanal revestido en cuero
+                        con detalles metálicos.
+                    </p>
+
+                    <p>
+                        Incluye bombilla de acero inoxidable.
+                    </p>
+                </article>
+
+                <article class="producto">
+                    <h3>Mate Camionero</h3>
+
+                    <p>
+                        Mate de calabaza natural, cómodo,
+                        resistente y perfecto para todos los días.
+                    </p>
+
+                    <p>
+                        Incluye bombilla de acero inoxidable.
+                    </p>
+                </article>
+
+                <article class="producto">
+                    <h3>Bombilla de Acero</h3>
+
+                    <p>
+                        Bombilla de acero inoxidable,
+                        resistente y fácil de limpiar.
+                    </p>
+
+                    <p>
+                        Cuenta con filtro desmontable.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="seccion contacto" id="contacto">
+
+            <h2>Contacto</h2>
+
+            <form action="/contacto" method="POST">
+
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                >
+
+                <label for="email">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar consulta
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Mates del Sur</p>
+    </footer>
+
+</body>
+</html>
