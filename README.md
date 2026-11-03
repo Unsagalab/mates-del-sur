@@ -10,6 +10,7 @@ Mates del Sur es una tienda ficticia de mates y accesorios.
 
 ![Vista de Mates del Sur](Mates%20del%20Sur_%20tradici%C3%B3n%20en%20cada%20sorbo.jpg)
 
+
 El proyecto incluye:
 
 - Página principal con productos.
@@ -25,6 +26,22 @@ El proyecto incluye:
 - Flask
 - SQLite
 - SQL
+
+  ## Funcionalidades
+
+- Página principal con productos.
+- Formulario de contacto.
+- Guardado de consultas en SQLite.
+- Visualización de consultas desde Flask.
+- Diseño responsive básico.
+
+## Qué aprendí
+
+- Crear rutas con Flask.
+- Conectar Python con SQLite.
+- Trabajar con formularios POST.
+- Consultar datos con SQL.
+- Integrar frontend y backend.
 
 ## Funcionamiento
 
