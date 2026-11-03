@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultas | Mates del Sur</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5efe5;
+            color: #302820;
+        }
+
+        header {
+            background-color: #294936;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .consulta {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+        }
+
+        .consulta h3 {
+            color: #294936;
+        }
+
+        .fecha {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #386c4c;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🧉 Consultas recibidas</h1>
+    </header>
+
+    <main>
+
+        {% for contacto in contactos %}
+
+            <div class="consulta">
+
+                <h3>
+                    {{ contacto["nombre"] }}
+                </h3>
+
+                <p>
+                    <strong>Email:</strong>
+                    {{ contacto["email"] }}
+                </p>
+
+                <p>
+                    <strong>Mensaje:</strong>
+                    {{ contacto["mensaje"] }}
+                </p>
+
+                <p class="fecha">
+                    {{ contacto["fecha"] }}
+                </p>
+
+            </div>
+
+        {% else %}
+
+            <p>
+                Todavía no hay consultas guardadas.
+            </p>
+
+        {% endfor %}
+
+        <a href="/" class="boton">
+            ← Volver a la tienda
+        </a>
+
+    </main>
+
+</body>
+</html>
