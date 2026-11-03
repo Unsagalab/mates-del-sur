@@ -36,11 +36,5 @@ HTML / CSS
 Flask
     ↓
 Python
-
-
-
-## Vista del proyecto
-
-![Vista de Mates del Sur](Mates del sur_tradicion en cada sorbo.png)
     ↓
 SQLite
