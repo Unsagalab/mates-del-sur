@@ -8,7 +8,7 @@ Mates del Sur es una tienda ficticia de mates y accesorios.
 
 ## Vista del proyecto
 
-![Vista de Mates del Sur](Mates%20del%20sur_tradicion%20en%20cada%20sorbo.png)
+![Vista de Mates del Sur](Mates%20del%20Sur_%20tradici%C3%B3n%20en%20cada%20sorbo.jpg)
 
 El proyecto incluye:
 
