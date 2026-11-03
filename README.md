@@ -6,6 +6,10 @@ Proyecto web desarrollado como práctica de Backend con Python, Flask y SQLite.
 
 Mates del Sur es una tienda ficticia de mates y accesorios.
 
+## Vista del proyecto
+
+![Vista de Mates del Sur](Mates del sur_tradicion en cada sorbo.png)
+
 El proyecto incluye:
 
 - Página principal con productos.
