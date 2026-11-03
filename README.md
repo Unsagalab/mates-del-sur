@@ -43,6 +43,31 @@ El proyecto incluye:
 - Consultar datos con SQL.
 - Integrar frontend y backend.
 
+  ## Próximas mejoras
+
+- Agregar imágenes reales de productos.
+- Incorporar edición y eliminación de consultas.
+- Crear un panel administrativo más completo.
+- Agregar gestión de stock.
+- Separar CSS y JavaScript en archivos propios.
+- Publicar la aplicación online.
+
+## Capturas del proyecto
+
+### Página principal
+![Página principal](pagina-principal.jpg)
+
+### Productos
+![Productos](productos.jpg)
+
+### Formulario de contacto
+![Formulario de contacto](formulario.jpg)
+
+### Consultas recibidas
+![Consultas recibidas](consultas.jpg)
+
+
+
 ## Funcionamiento
 
 El formulario de contacto envía los datos al backend desarrollado con Flask.
